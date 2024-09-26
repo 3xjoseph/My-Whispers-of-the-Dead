@@ -1,0 +1,2 @@
+# Whispers for the Dead
+ In Whispers of the Dead, players are thrust into a chilling post-apocalyptic world overrun by the undead. Set in the aftermath of a mysterious pandemic that turned much of the population into zombies, the game’s eerie atmosphere is defined by unsettling silence, punctuated by distant, ominous whispers. These whispers, coming from the undead themselves, are remnants of the humans they once were, creating an emotional and psychological horror alongside the physical threat.  Story:
