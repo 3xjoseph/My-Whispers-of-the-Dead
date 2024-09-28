@@ -8,6 +8,7 @@ public class EnemyAI : MonoBehaviour
 {
     [SerializeField] Transform target;
     [SerializeField] float chaseRange = 5f;
+    public float ChaseRange { get { return chaseRange; } }
     NavMeshAgent navMeshAgent;
     float distanceToTarget = Mathf.Infinity;
 
@@ -25,5 +26,12 @@ public class EnemyAI : MonoBehaviour
             navMeshAgent.SetDestination(target.position);
         }
         
+    }
+
+    void OnDrawGizmosSelected() 
+    {
+        // Display the explosion radius when selected.
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, chaseRange);
     }
 }
