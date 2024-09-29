@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 38db4f10aacb1d64abfe6f92fc12eff8, type: 2}
+--- !u!198 &230915802 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2602472707810836247, guid: 790d65bb337318d459bf155851c26624, type: 3}
+  m_PrefabInstance: {fileID: 6399128300372345788}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &387988250
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,29 +882,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1093089436620622459, guid: 790d65bb337318d459bf155851c26624, type: 3}
-      propertyPath: near clip plane
-      value: 0.1
+    - target: {fileID: 2564903494723003174, guid: 790d65bb337318d459bf155851c26624, type: 3}
+      propertyPath: m_Name
+      value: Muzzle Flash VFX
       objectReference: {fileID: 0}
-    - target: {fileID: 1093089436620622460, guid: 790d65bb337318d459bf155851c26624, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.20000005
+    - target: {fileID: 2564903494732682948, guid: 790d65bb337318d459bf155851c26624, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1093089436620622460, guid: 790d65bb337318d459bf155851c26624, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.375
+    - target: {fileID: 2564903494732682950, guid: 790d65bb337318d459bf155851c26624, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1093089436620622460, guid: 790d65bb337318d459bf155851c26624, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
+    - target: {fileID: 2564903494740933186, guid: 790d65bb337318d459bf155851c26624, type: 3}
+      propertyPath: InitialModule.startSizeY.minMaxState
+      value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 1093089436620622460, guid: 790d65bb337318d459bf155851c26624, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1093089436620622460, guid: 790d65bb337318d459bf155851c26624, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
+    - target: {fileID: 2564903494740933186, guid: 790d65bb337318d459bf155851c26624, type: 3}
+      propertyPath: InitialModule.startSizeZ.minMaxState
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2571660103323094686, guid: 790d65bb337318d459bf155851c26624, type: 3}
       propertyPath: m_Name
@@ -945,8 +946,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6766232154732381165, guid: 790d65bb337318d459bf155851c26624, type: 3}
+      propertyPath: muzzleFlash
+      value: 
+      objectReference: {fileID: 230915802}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2564903494723003174, guid: 790d65bb337318d459bf155851c26624, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 790d65bb337318d459bf155851c26624, type: 3}
