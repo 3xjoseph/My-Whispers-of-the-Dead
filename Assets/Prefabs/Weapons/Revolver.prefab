@@ -971,6 +971,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fpsCamera: {fileID: 0}
   muzzleFlash: {fileID: 0}
+  hitEffect: {fileID: 3483624825056104925, guid: dac4f45c284713f49b511d42ba60718a, type: 3}
   range: 50
   damage: 4
 --- !u!1001 &4158978306103273596
