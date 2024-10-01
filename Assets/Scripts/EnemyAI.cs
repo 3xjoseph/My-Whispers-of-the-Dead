@@ -60,10 +60,8 @@ public class EnemyAI : MonoBehaviour
     void AttackTarget()
     {
         GetComponent<Animator>().SetBool("Attack", true);
-        Debug.Log("Chomp.. Chomp.. Chomp..");
     } 
     
-
     void OnDrawGizmosSelected() 
     {
         // Display the explosion radius when selected.
