@@ -6,12 +6,13 @@ using UnityEngine;
 
 public class Weapons : MonoBehaviour
 {
+
     [SerializeField] Camera fpsCamera;
     [SerializeField] ParticleSystem muzzleFlash;
     [SerializeField] GameObject hitEffect;
 
-    [SerializeField] float range = 100f;
-    [SerializeField] float damage = 4;
+    [Tooltip("The range of the weapon")][SerializeField] float range = 100f;
+    [Tooltip("The damage of the weapon")][SerializeField] float damage = 4;
     
     void Update()
     {
