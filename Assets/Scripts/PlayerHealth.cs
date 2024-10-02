@@ -11,6 +11,7 @@ public class PlayerHealth : MonoBehaviour
         health -= damage;
         if ( health <= 0)
         {
+            GetComponent<DeathHandler>().HandleDeath();
             Debug.Log("You Are Dead!");
         }
     }
