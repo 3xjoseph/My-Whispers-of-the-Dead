@@ -11,22 +11,29 @@ public class Weapons : MonoBehaviour
     [Tooltip("Particle System for the gun's muzzle flash")] [SerializeField] ParticleSystem muzzleFlash;
     [Tooltip("Particle System for the bullet hitFX")] [SerializeField] GameObject hitEffect;
 
+    
     [Header("Weapon Settings")]
     [Tooltip("The range of the weapon")] [SerializeField] float range = 100f;
     [Tooltip("The damage of the weapon")] [SerializeField] float damage = 4;
+
+    [SerializeField] Ammo ammoSlot;
     
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            Shoot();
+            Shoot();  
         }
     }
 
     void Shoot()
     {
-        PlayMuzzleFlash();
-        ProcessRaycast();
+        if (ammoSlot.GetCurrentAmmo() > 0)
+        {
+            PlayMuzzleFlash();
+            ProcessRaycast();
+            ammoSlot.ReduceCurrentAmmo();
+        }   
     }
 
     void PlayMuzzleFlash()
