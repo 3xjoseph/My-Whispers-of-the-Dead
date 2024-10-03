@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
 
-    [Tooltip("The x amount of hits to kill the enemy")][SerializeField] float hitPoints = 20f;
+    [Tooltip("The x amount of hits to kill the enemy")] [SerializeField] float hitPoints = 20f;
 
     public void TakeDamage(float damage)
     {

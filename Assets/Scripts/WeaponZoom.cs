@@ -1,15 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
+using StarterAssets;
+using UnityEditor.EditorTools;
 using UnityEngine;
 
 public class WeaponZoom : MonoBehaviour
 {
-    [SerializeField] CinemachineVirtualCamera cvCamera;
-    [SerializeField] float zoomOut = 60f;
-    [SerializeField] float zoomIn = 30f;
+    [Header("General Settings")]
+    [Tooltip("The camera that will zoom in and out")] [SerializeField] CinemachineVirtualCamera cvCamera;
+
+    [Header("Zoom Settings")]
+    [Tooltip("FOV Distance when zoomed out")] [SerializeField] float zoomOut = 60f;
+    [Tooltip("FOV Distance when zoomed in")] [SerializeField] float zoomIn = 30f;
+
+    [Header("Zoom Sensitivity Settings")]
+    [Tooltip("Mouse sensitivity when zoomed in")] [SerializeField] float zoomInSensitivity = .5f;
+    [Tooltip("Mouse sensitivity when zoomed out")] [SerializeField] float zoomOutSensitivity = 1f;
+
+    FirstPersonController firstPersonController;
 
     bool zoomedInToggle = false;
+
+    void Start() 
+    {
+        firstPersonController = GetComponent<FirstPersonController>();
+    }
 
     void Update() 
     {
@@ -29,11 +45,13 @@ public class WeaponZoom : MonoBehaviour
     {
         zoomedInToggle = true;
         cvCamera.GetComponent<CinemachineVirtualCamera>().m_Lens.FieldOfView = zoomIn;
+        firstPersonController.RotationSpeed = zoomInSensitivity;
     }
 
     private void ZoomOut()
     {
         zoomedInToggle = false;
         cvCamera.GetComponent<CinemachineVirtualCamera>().m_Lens.FieldOfView = zoomOut;
+        firstPersonController.RotationSpeed = zoomOutSensitivity;
     }
 }

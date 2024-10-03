@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyAttack : MonoBehaviour
 {
     PlayerHealth target;
-    [SerializeField] float damage = 5f; 
+    [Tooltip("The amount of damage the enemy generates")] [SerializeField] float damage = 5f; 
     void Start()
     {
         target = FindObjectOfType<PlayerHealth>();

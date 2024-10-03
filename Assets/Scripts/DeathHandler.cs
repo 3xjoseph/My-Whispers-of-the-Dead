@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class DeathHandler : MonoBehaviour
 {
+    [Tooltip("The canvas that will be shown when the player loses")]
     [SerializeField] Canvas gameOverCanvas;
 
     void Start()

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [Tooltip("The total amount of health the player has")][SerializeField] float health = 20f;
+    [Tooltip("The total amount of health the player has")] [SerializeField] float health = 20f;
 
     public void PlayerHit(float damage)
     {

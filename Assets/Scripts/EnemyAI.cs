@@ -7,14 +7,13 @@ using UnityEngine.AI;
 public class EnemyAI : MonoBehaviour
 {
     [Header("General Settings")]
-    [Tooltip("The target that the enemy wants to chase")]
 
+    [Tooltip("The target that the enemy wants to chase")]
     [SerializeField] Transform target;
 
-    [Tooltip("Radius of the target range")]
-    [SerializeField] float chaseRange = 5f;
+    [Tooltip("Radius of the target range")] [SerializeField] float chaseRange = 5f;
     
-    [SerializeField] float turnSpeed = 5;
+    [Tooltip("The speed in which how fast the enemy turns")] [SerializeField] float turnSpeed = 5;
 
     NavMeshAgent navMeshAgent;
     float distanceToTarget = Mathf.Infinity;

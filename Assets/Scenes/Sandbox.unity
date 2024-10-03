@@ -1586,17 +1586,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c081916bd34a31a49a377f297836ce65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &967320530 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 808870570184352681, guid: 790d65bb337318d459bf155851c26624, type: 3}
-  m_PrefabInstance: {fileID: 6399128300372345788}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &975732295
 GameObject:
   m_ObjectHideFlags: 0
@@ -3004,10 +2993,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3389900169716888258, guid: 790d65bb337318d459bf155851c26624, type: 3}
-      propertyPath: cvCamera
-      value: 
-      objectReference: {fileID: 967320530}
     - target: {fileID: 3985945569277969173, guid: 790d65bb337318d459bf155851c26624, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

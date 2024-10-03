@@ -6,13 +6,14 @@ using UnityEngine;
 
 public class Weapons : MonoBehaviour
 {
+    [Header("General Settings")]
+    [Tooltip("Camera that will be used to follow the raycast")] [SerializeField] Camera fpsCamera;
+    [Tooltip("Particle System for the gun's muzzle flash")] [SerializeField] ParticleSystem muzzleFlash;
+    [Tooltip("Particle System for the bullet hitFX")] [SerializeField] GameObject hitEffect;
 
-    [SerializeField] Camera fpsCamera;
-    [SerializeField] ParticleSystem muzzleFlash;
-    [SerializeField] GameObject hitEffect;
-
-    [Tooltip("The range of the weapon")][SerializeField] float range = 100f;
-    [Tooltip("The damage of the weapon")][SerializeField] float damage = 4;
+    [Header("Weapon Settings")]
+    [Tooltip("The range of the weapon")] [SerializeField] float range = 100f;
+    [Tooltip("The damage of the weapon")] [SerializeField] float damage = 4;
     
     void Update()
     {
