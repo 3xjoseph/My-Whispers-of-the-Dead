@@ -8,9 +8,12 @@ public class EnemyAI : MonoBehaviour
 {
     [Header("General Settings")]
     [Tooltip("The target that the enemy wants to chase")]
+
     [SerializeField] Transform target;
+
     [Tooltip("Radius of the target range")]
     [SerializeField] float chaseRange = 5f;
+    
     [SerializeField] float turnSpeed = 5;
 
     NavMeshAgent navMeshAgent;
