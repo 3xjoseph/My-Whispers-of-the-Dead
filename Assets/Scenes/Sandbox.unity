@@ -490,11 +490,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5371820258928920921, guid: a4dc059c3d8506343a81c661073d003c, type: 3}
   m_PrefabInstance: {fileID: 172680641}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &230915802 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 2602472707810836247, guid: 790d65bb337318d459bf155851c26624, type: 3}
-  m_PrefabInstance: {fileID: 6399128300372345788}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &285729931
 GameObject:
   m_ObjectHideFlags: 0
@@ -1589,6 +1584,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c081916bd34a31a49a377f297836ce65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &967320530 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 808870570184352681, guid: 790d65bb337318d459bf155851c26624, type: 3}
+  m_PrefabInstance: {fileID: 6399128300372345788}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &975732295
@@ -2994,46 +3000,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1241586053679390569, guid: 790d65bb337318d459bf155851c26624, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1602023946355523539, guid: 790d65bb337318d459bf155851c26624, type: 3}
-      propertyPath: damage
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2361860409271709704, guid: 790d65bb337318d459bf155851c26624, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2564903494723003174, guid: 790d65bb337318d459bf155851c26624, type: 3}
-      propertyPath: m_Name
-      value: Muzzle Flash VFX
-      objectReference: {fileID: 0}
-    - target: {fileID: 2564903494732682948, guid: 790d65bb337318d459bf155851c26624, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2564903494732682950, guid: 790d65bb337318d459bf155851c26624, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2564903494740933186, guid: 790d65bb337318d459bf155851c26624, type: 3}
-      propertyPath: InitialModule.startSizeY.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2564903494740933186, guid: 790d65bb337318d459bf155851c26624, type: 3}
-      propertyPath: InitialModule.startSizeZ.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 2571660103323094686, guid: 790d65bb337318d459bf155851c26624, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3061686853166588376, guid: 790d65bb337318d459bf155851c26624, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 3389900169716888258, guid: 790d65bb337318d459bf155851c26624, type: 3}
+      propertyPath: cvCamera
+      value: 
+      objectReference: {fileID: 967320530}
     - target: {fileID: 3985945569277969173, guid: 790d65bb337318d459bf155851c26624, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3078,27 +3052,8 @@ PrefabInstance:
       propertyPath: gameOverCanvas
       value: 
       objectReference: {fileID: 607880137}
-    - target: {fileID: 4934681723346545876, guid: 790d65bb337318d459bf155851c26624, type: 3}
-      propertyPath: range
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 4934681723346545876, guid: 790d65bb337318d459bf155851c26624, type: 3}
-      propertyPath: damage
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4934681723346545876, guid: 790d65bb337318d459bf155851c26624, type: 3}
-      propertyPath: hitEffect
-      value: 
-      objectReference: {fileID: 3483624825056104925, guid: dac4f45c284713f49b511d42ba60718a, type: 3}
-    - target: {fileID: 6766232154732381165, guid: 790d65bb337318d459bf155851c26624, type: 3}
-      propertyPath: muzzleFlash
-      value: 
-      objectReference: {fileID: 230915802}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 2564903494723003174, guid: 790d65bb337318d459bf155851c26624, type: 3}
-    - {fileID: 3074183283808916863, guid: 790d65bb337318d459bf155851c26624, type: 3}
-    - {fileID: 3216007937940980802, guid: 790d65bb337318d459bf155851c26624, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 790d65bb337318d459bf155851c26624, type: 3}
