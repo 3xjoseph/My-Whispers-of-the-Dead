@@ -15,25 +15,31 @@ public class Weapons : MonoBehaviour
     [Header("Weapon Settings")]
     [Tooltip("The range of the weapon")] [SerializeField] float range = 100f;
     [Tooltip("The damage of the weapon")] [SerializeField] float damage = 4;
-
-    [SerializeField] Ammo ammoSlot;
+    [Tooltip("The getter for the ammo counter")] [SerializeField] Ammo ammoSlot;
+    [Tooltip("The amount of time between fired shots")] [SerializeField] float timeBetweenShots = .5f;
     
+    bool canShoot = true;
+    
+
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetMouseButtonDown(0) && canShoot)
         {
-            Shoot();  
+            StartCoroutine(Shoot());  
         }
     }
 
-    void Shoot()
+    IEnumerator Shoot()
     {
+        canShoot = false;
         if (ammoSlot.GetCurrentAmmo() > 0)
         {
             PlayMuzzleFlash();
             ProcessRaycast();
             ammoSlot.ReduceCurrentAmmo();
-        }   
+        }
+        yield return new WaitForSeconds(timeBetweenShots);  
+        canShoot = true;
     }
 
     void PlayMuzzleFlash()

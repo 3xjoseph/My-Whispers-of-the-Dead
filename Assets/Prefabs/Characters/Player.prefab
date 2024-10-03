@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 4814625105233282528}
   - component: {fileID: 4945520051327818805}
   - component: {fileID: 4651882442199136579}
-  - component: {fileID: 3389900169716888258}
   - component: {fileID: 2875812601048596353}
   m_Layer: 8
   m_Name: Player
@@ -257,23 +256,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverCanvas: {fileID: 0}
---- !u!114 &3389900169716888258
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2571660103323094686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 562fab1eab8d6764bac43ef8c8f7b38f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cvCamera: {fileID: 808870570184352681}
-  zoomOut: 60
-  zoomIn: 30
-  zoomInSensitivity: 0.5
-  zoomOutSensitivity: 1
 --- !u!114 &2875812601048596353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -363,10 +345,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 2819287374957594360}
     m_Modifications:
     - target: {fileID: 4702359290286421724, guid: c62f9888d6e34a14b86abea5fb64b0b3, type: 3}
-      propertyPath: damage
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4702359290286421724, guid: c62f9888d6e34a14b86abea5fb64b0b3, type: 3}
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 2875812601048596353}
@@ -374,6 +352,14 @@ PrefabInstance:
       propertyPath: fpsCamera
       value: 
       objectReference: {fileID: 1093089436620622459}
+    - target: {fileID: 4902070064431324826, guid: c62f9888d6e34a14b86abea5fb64b0b3, type: 3}
+      propertyPath: cvCamera
+      value: 
+      objectReference: {fileID: 808870570184352681}
+    - target: {fileID: 4902070064431324826, guid: c62f9888d6e34a14b86abea5fb64b0b3, type: 3}
+      propertyPath: firstPersonController
+      value: 
+      objectReference: {fileID: 772126578025585888}
     - target: {fileID: 9008573017672578295, guid: c62f9888d6e34a14b86abea5fb64b0b3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.013
@@ -417,10 +403,6 @@ PrefabInstance:
     - target: {fileID: 9008573017672739031, guid: c62f9888d6e34a14b86abea5fb64b0b3, type: 3}
       propertyPath: m_Name
       value: Assault Rfile
-      objectReference: {fileID: 0}
-    - target: {fileID: 9008573017672739031, guid: c62f9888d6e34a14b86abea5fb64b0b3, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
