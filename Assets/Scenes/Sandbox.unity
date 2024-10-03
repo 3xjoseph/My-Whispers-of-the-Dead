@@ -3046,10 +3046,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 607880137}
     - target: {fileID: 6766232154732381165, guid: 790d65bb337318d459bf155851c26624, type: 3}
-      propertyPath: ammoSlot
-      value: 
-      objectReference: {fileID: 8997996947581973925}
-    - target: {fileID: 6766232154732381165, guid: 790d65bb337318d459bf155851c26624, type: 3}
       propertyPath: ammoslot
       value: 
       objectReference: {fileID: 8997996947581973925}
