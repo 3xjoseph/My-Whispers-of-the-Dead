@@ -278,6 +278,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2819287374957594360}
+  - component: {fileID: 8306903294520958344}
   m_Layer: 0
   m_Name: Weapons
   m_TagString: Untagged
@@ -303,6 +304,19 @@ Transform:
   - {fileID: 3138115225581169330}
   m_Father: {fileID: 6641575866796649562}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8306903294520958344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6677643267483137490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e089f1ab0dce9a43aa473274a06be99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentWeapon: 0
 --- !u!1 &8300142800205386116
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,7 +454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8527285019786616151, guid: c95237f14269b65408585a04ae482c53, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9015309421560219629, guid: c95237f14269b65408585a04ae482c53, type: 3}
       propertyPath: m_LocalPosition.x
