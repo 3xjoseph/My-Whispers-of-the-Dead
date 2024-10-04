@@ -21,6 +21,11 @@ public class WeaponZoom : MonoBehaviour
 
     bool zoomedInToggle = false;
 
+    void OnDisable() 
+    {
+        ZoomOut();
+    }
+
     void Update() 
     {
         if (Input.GetMouseButtonDown(1))
@@ -35,14 +40,14 @@ public class WeaponZoom : MonoBehaviour
             }
         }    
     }
-    void ZoomIn()
+    public void ZoomIn()
     {
         zoomedInToggle = true;
         cvCamera.GetComponent<CinemachineVirtualCamera>().m_Lens.FieldOfView = zoomIn;
         firstPersonController.RotationSpeed = zoomInSensitivity;
     }
 
-    private void ZoomOut()
+    public void ZoomOut()
     {
         zoomedInToggle = false;
         cvCamera.GetComponent<CinemachineVirtualCamera>().m_Lens.FieldOfView = zoomOut;
