@@ -478,7 +478,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6557471016633860966, guid: a4dc059c3d8506343a81c661073d003c, type: 3}
       propertyPath: hitPoints
-      value: 30
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1530,7 +1530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6557471016633860966, guid: a4dc059c3d8506343a81c661073d003c, type: 3}
       propertyPath: hitPoints
-      value: 10
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2971,6 +2971,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6557471016633860966, guid: a4dc059c3d8506343a81c661073d003c, type: 3}
+      propertyPath: hitPoints
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2992,6 +2996,30 @@ PrefabInstance:
     - target: {fileID: 2571660103323094686, guid: 790d65bb337318d459bf155851c26624, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2875812601048596353, guid: 790d65bb337318d459bf155851c26624, type: 3}
+      propertyPath: ammoSlots.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2875812601048596353, guid: 790d65bb337318d459bf155851c26624, type: 3}
+      propertyPath: ammoSlots.Array.data[1].ammoType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2875812601048596353, guid: 790d65bb337318d459bf155851c26624, type: 3}
+      propertyPath: ammoSlots.Array.data[2].ammoType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2875812601048596353, guid: 790d65bb337318d459bf155851c26624, type: 3}
+      propertyPath: ammoSlots.Array.data[0].ammoAmount
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2875812601048596353, guid: 790d65bb337318d459bf155851c26624, type: 3}
+      propertyPath: ammoSlots.Array.data[1].ammoAmount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2875812601048596353, guid: 790d65bb337318d459bf155851c26624, type: 3}
+      propertyPath: ammoSlots.Array.data[2].ammoAmount
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3985945569277969173, guid: 790d65bb337318d459bf155851c26624, type: 3}
       propertyPath: m_LocalPosition.x
