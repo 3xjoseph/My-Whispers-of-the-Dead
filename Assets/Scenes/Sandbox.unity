@@ -3037,10 +3037,6 @@ PrefabInstance:
       propertyPath: gameOverCanvas
       value: 
       objectReference: {fileID: 607880137}
-    - target: {fileID: 8306903294520958344, guid: 790d65bb337318d459bf155851c26624, type: 3}
-      propertyPath: currentWeapon
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
