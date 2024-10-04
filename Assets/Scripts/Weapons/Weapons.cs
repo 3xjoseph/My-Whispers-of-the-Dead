@@ -15,9 +15,13 @@ public class Weapons : MonoBehaviour
     [Header("Weapon Settings")]
     [Tooltip("The range of the weapon")] [SerializeField] float range = 100f;
     [Tooltip("The damage of the weapon")] [SerializeField] float damage = 4;
-    [Tooltip("The getter for the ammo counter")] [SerializeField] Ammo ammoSlot;
-    [SerializeField] AmmoType ammoType;
     [Tooltip("The amount of time between fired shots")] [SerializeField] float timeBetweenShots = .5f;
+    
+    
+    [Header("Ammo Settings")]
+    [Tooltip("The getter for the ammo counter")] [SerializeField] Ammo ammoSlot;
+    [Tooltip("Identifies what type of ammo")][SerializeField] AmmoType ammoType;
+    
     
     bool canShoot = true;
     
