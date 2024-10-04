@@ -442,7 +442,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5371820258928920921, guid: a4dc059c3d8506343a81c661073d003c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.9614668
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5371820258928920921, guid: a4dc059c3d8506343a81c661073d003c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1398,7 +1398,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5371820258928920921, guid: a4dc059c3d8506343a81c661073d003c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5371820258928920921, guid: a4dc059c3d8506343a81c661073d003c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2148,7 +2148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8345070699079395522, guid: 09aade0ecefd01e4b8f7661acf64f5c2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.1
+      value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: 8345070699079395522, guid: 09aade0ecefd01e4b8f7661acf64f5c2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2694,7 +2694,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5371820258928920921, guid: a4dc059c3d8506343a81c661073d003c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5371820258928920921, guid: a4dc059c3d8506343a81c661073d003c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2750,6 +2750,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 808870570184352681, guid: 790d65bb337318d459bf155851c26624, type: 3}
+      propertyPath: m_Lens.FieldOfView
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1093089436620622459, guid: 790d65bb337318d459bf155851c26624, type: 3}
+      propertyPath: field of view
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 2571660103323094686, guid: 790d65bb337318d459bf155851c26624, type: 3}
       propertyPath: m_Name
       value: Player
