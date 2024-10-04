@@ -268,7 +268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b27dd46ef0dd44b438f39da00273e8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoAmount: 10
+  ammoSlots: []
 --- !u!1 &6677643267483137490
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,8 +300,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1905356192173245907}
-  - {fileID: 3061686853166824952}
   - {fileID: 3138115225581169330}
+  - {fileID: 3061686853166824952}
   m_Father: {fileID: 6641575866796649562}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8306903294520958344

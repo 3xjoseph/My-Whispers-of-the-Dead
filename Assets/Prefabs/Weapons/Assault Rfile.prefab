@@ -391,6 +391,7 @@ MonoBehaviour:
   range: 50
   damage: 30
   ammoSlot: {fileID: 0}
+  ammoType: 2
   timeBetweenShots: 0.5
 --- !u!114 &4902070064431324826
 MonoBehaviour:
