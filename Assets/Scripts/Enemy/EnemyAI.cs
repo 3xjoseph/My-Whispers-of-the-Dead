@@ -20,7 +20,6 @@ public class EnemyAI : MonoBehaviour
     bool isProvoked = false;
     EnemyHealth enemyHealth;
     
-
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
