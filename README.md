@@ -1,5 +1,9 @@
 # Whispers for the Dead
 
+Link: https://play.unity.com/en/games/43accee4-5cd0-4e5d-92f2-6f0a2ed23b04/whisper-of-the-dead
+
+Install: https://drive.google.com/file/d/1DgOOsA0k6n2ZQAq72HvLk61QtQYA7pc2/view?usp=sharing
+
 Genre: First-Person Zombie Shooter
 
 Platform: PC 
