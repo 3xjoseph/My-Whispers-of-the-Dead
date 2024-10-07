@@ -16,6 +16,17 @@ public class FlashlightSystem : MonoBehaviour
         myLight = GetComponent<Light>();
     }
 
+    public void RestoreLightAngle(float restoreAngle)
+    {
+        myLight.spotAngle = restoreAngle;
+    }
+
+    public void RestoreLightIntensity(float intensityAmount)
+    {
+        myLight.intensity += intensityAmount;
+    }
+
+
     void Update() 
     {
         DecreaseLightAngle();
