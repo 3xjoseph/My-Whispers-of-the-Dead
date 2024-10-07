@@ -68,7 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6598cf958c55d774c8dafb720448ea06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intensityReplenish: 0.5
+  intensityReplenish: 1.5
   angleReplenish: 40
 --- !u!1 &4925972202366957424
 GameObject:

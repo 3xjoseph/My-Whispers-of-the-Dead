@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
+using UnityEditor.EditorTools;
 using UnityEngine;
 
 public class Weapons : MonoBehaviour
@@ -23,13 +24,18 @@ public class Weapons : MonoBehaviour
     [Header("Ammo Settings")]
     [Tooltip("The getter for the ammo counter")] [SerializeField] Ammo ammoSlot;
     [Tooltip("Identifies what type of ammo")][SerializeField] AmmoType ammoType;
-    
-    
+
+    AudioSource gunSFX;
     bool canShoot = true;
     
     void OnEnable() 
     {
         canShoot = true;
+    }
+
+    void Start()
+    {
+        gunSFX = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -55,6 +61,7 @@ public class Weapons : MonoBehaviour
             PlayMuzzleFlash();
             ProcessRaycast();
             ammoSlot.ReduceCurrentAmmo(ammoType);
+            gunSFX.Play();
         }
         yield return new WaitForSeconds(timeBetweenShots);  
         canShoot = true;
