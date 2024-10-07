@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 4945520051327818805}
   - component: {fileID: 4651882442199136579}
   - component: {fileID: 2875812601048596353}
+  - component: {fileID: 961897748922441322}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -275,6 +276,20 @@ MonoBehaviour:
     ammoAmount: 5
   - ammoType: 2
     ammoAmount: 10
+--- !u!114 &961897748922441322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2571660103323094686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8647eb49240f984aadb453595eb9a24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactCanvas: {fileID: 0}
+  impactTime: 0.3
 --- !u!1 &6677643267483137490
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,15 +775,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 93.25
+      value: 0.19999695
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 18.635
+      value: 1.375
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 30.84
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_LocalRotation.w
