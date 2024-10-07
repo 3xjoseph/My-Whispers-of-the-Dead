@@ -1,7 +1,6 @@
-  using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using StarterAssets;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 

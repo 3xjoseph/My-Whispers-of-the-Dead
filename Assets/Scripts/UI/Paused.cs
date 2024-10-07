@@ -1,10 +1,12 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class Paused : MonoBehaviour
 {
     int currentSceneIndex;
-    public void StartGame()
+    public void RestartGame()
     {
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         int nextSceneIndex = currentSceneIndex + 1;
@@ -13,11 +15,8 @@ public class MainMenu : MonoBehaviour
             nextSceneIndex = 0;
         }
         SceneManager.LoadScene(nextSceneIndex);
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
     }
-
-   public void QuitGame()
+    public void QuitGame()
     {
         Application.Quit();
         Debug.Log("Exited the Game");

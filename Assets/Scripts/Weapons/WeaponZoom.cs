@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
 using StarterAssets;
-using UnityEditor.EditorTools;
 using UnityEngine;
 
 public class WeaponZoom : MonoBehaviour
