@@ -2,6 +2,8 @@
 
 Link: https://play.unity.com/en/games/86123607-d3cb-4b9e-a25d-ba09d501f3a0/webgl
 
+Install: https://drive.google.com/file/d/1jJzLCj6mFXcqwixVJnvCjmRK0ufnjNXF/view?usp=sharing
+
 Genre: First-Person Zombie Shooter
 
 Platform: PC 
