@@ -7,9 +7,12 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+    int currentSceneIndex;
     public void ReloadGame()
     {
-        SceneManager.LoadScene(0);
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;   
+        SceneManager.LoadScene(currentSceneIndex);
+        
         FindObjectOfType<AudioListener>().enabled = true;
         Time.timeScale = 1;
         Cursor.lockState = CursorLockMode.Locked;
