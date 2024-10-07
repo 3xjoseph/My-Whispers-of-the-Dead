@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -16,6 +17,7 @@ public class Weapons : MonoBehaviour
     [Tooltip("The range of the weapon")] [SerializeField] float range = 100f;
     [Tooltip("The damage of the weapon")] [SerializeField] float damage = 4;
     [Tooltip("The amount of time between fired shots")] [SerializeField] float timeBetweenShots = .5f;
+    [SerializeField] TextMeshProUGUI ammoText;
     
     
     [Header("Ammo Settings")]
@@ -32,10 +34,17 @@ public class Weapons : MonoBehaviour
 
     void Update()
     {
+        DisplayAmmo();
         if (Input.GetMouseButtonDown(0) && canShoot)
         {
             StartCoroutine(Shoot());  
         }
+    }
+
+    void DisplayAmmo()
+    {
+        int currentAmmo = ammoSlot.GetCurrentAmmo(ammoType);
+        ammoText.text = "Ammo: " + currentAmmo.ToString();
     }
 
     IEnumerator Shoot()
