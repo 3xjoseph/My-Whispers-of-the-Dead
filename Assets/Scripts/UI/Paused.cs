@@ -8,13 +8,13 @@ public class Paused : MonoBehaviour
     int currentSceneIndex;
     public void RestartGame()
     {
-        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        int nextSceneIndex = currentSceneIndex + 1;
-        if (nextSceneIndex == SceneManager.sceneCountInBuildSettings) 
-        {
-            nextSceneIndex = 0;
-        }
-        SceneManager.LoadScene(nextSceneIndex);
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;   
+        SceneManager.LoadScene(currentSceneIndex);
+
+        FindObjectOfType<AudioListener>().enabled = true;
+        Time.timeScale = 1;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
     public void QuitGame()
     {
