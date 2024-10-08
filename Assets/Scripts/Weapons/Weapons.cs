@@ -42,7 +42,13 @@ public class Weapons : MonoBehaviour
         DisplayAmmo();
         if (Input.GetMouseButtonDown(0) && canShoot)
         {
-            StartCoroutine(Shoot());  
+            if (Time.timeScale == 0f){ return; }
+
+            // Your weapon firing logic here
+            if (Input.GetButtonDown("Fire1"))
+            {
+                StartCoroutine(Shoot());
+            }  
         }
     }
 
