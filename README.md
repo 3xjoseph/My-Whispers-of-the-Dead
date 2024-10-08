@@ -1,8 +1,8 @@
 # Whispers for the Dead
 
-Link: https://play.unity.com/en/games/49c3bf9c-197c-4a61-bcfd-dd2cfbffe38c/whisper-of-the-dead
+Link: https://play.unity.com/en/games/f62a8669-1916-4045-be85-3f000325cc91/whisper-of-the-dead
 
-Install: https://www.mediafire.com/file/94dx3fr0mw7pv8v/Whisper_of_the_Dead.exe/file
+Install: https://www.mediafire.com/file/bbqb9n1d3p82th5/Whispers_of_the_Dead.exe/file
 
 Genre: First-Person Zombie Shooter
 
